@@ -1,2 +1,2 @@
 # studying-js
-Anotações e execícios sobre o JS.
+Algumas anotações, rascunhos etc. Relacionado à JS
