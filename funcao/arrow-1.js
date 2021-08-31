@@ -4,11 +4,17 @@ let dobro = function(a){
 }
 console.log(dobro(Math.PI))
 
-// Utilizando arrow
-dobro = a => {
+// Utilizando arrow com 1 parâmetro
+dobro = a => {  //Quando for utilizar apenas 1 parâmetro, o uso dos parênteses é opcional.
     return 2 * a
 }
 console.log(dobro(2))
+
+// Utilizando arrow com mais de um paramêtro
+soma = (a, b) => {  //É necessário, quando tiver 2 parâmetros ou mais, colocar os parênteses.
+    return a + b
+}
+console.log(soma(4, 4))
 
 // Arrow de um jeito mais curto que acima
 dobro = a => 2 * a 
