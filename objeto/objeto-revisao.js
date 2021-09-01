@@ -10,6 +10,7 @@ delete produto['marca do produto']
 
 console.log(produto)
 
+// Objeto com vários atributos
 const carro = {
     modelo: 'Ecosport',
     valor: 55000,
