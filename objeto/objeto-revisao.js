@@ -29,7 +29,7 @@ const carro = {
         idade: 45
     }],
     calcularValorSeguro: function(){
-        //...
+        //..
     }
 }
 
