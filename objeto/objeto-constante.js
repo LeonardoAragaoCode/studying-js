@@ -8,7 +8,7 @@ console.log(pessoa)
 
 Object.freeze(pessoa) //Não deixa nada ser alterado no objeto "pessoa".
 
-pessoa.nome = 'Maria' //Nenhuma dessas linhas abaixa irá funcionar por causa do delete
+pessoa.nome = 'Maria'
 pessoa.end = 'Rua ABC'
 delete pessoa.nome
 console.log(pessoa) 
