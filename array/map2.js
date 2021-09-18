@@ -5,13 +5,8 @@ const carrinho = [
     '{"nome": "Caneta", "preco": 7.50}'    
 ]
 
-carrinho.map(function(preco){
-    const transformandoOBJ = JSON.parse(preco)
-    const somenteValores = Object.values(transformandoOBJ)
-    console.log(somenteValores)
-    somenteValores.forEach(function(preco){
-        if (preco === Number) {
-            console.log(preco)
-        }
-    })
-})
+const paraObjeto = json => JSON.parse(json) // "JSON.parse" transforma o JSON em objeto
+const apenasPreco = produto => produto.preco //".preco" vai direito no atributo que eu quero
+
+const resultado = carrinho.map(paraObjeto).map(apenasPreco)
+console.log(resultado)
