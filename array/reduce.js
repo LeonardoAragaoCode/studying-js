@@ -11,10 +11,10 @@ console.log(alunos.map(a => a.nota)) //Cria um array somente com as notas
 
 const resultado = alunos.map(a => a.nota).reduce(function(acumulador, atual){
     console.log(acumulador, atual) //Só para ver como funciona o processo
-    return acumulador + atual
+    return acumulador + atual //No caso eu quero
 })
 
-/* Posso também colocar um número inicial ao invés do 6.5
+/* Posso também colocar um número inicial ao invés do "6.5" como inicial.
 * Observe a posição na qual ele deve estar:
 const resultado = alunos.map(a => a.nota).reduce(function(acumulador, atual){
     console.log(acumulador, atual) 
