@@ -15,7 +15,7 @@ aprovados[3] = 'Paulo' //Dá tanto para adicionar, como alterar um existente.
 aprovados.push('Ahia') //Método .push adiciona um novo elemento ao Array
 
 aprovados[9] = 'Rafael' 
-console.log(aprovados.length) //Método .length diz o tamanho do array
+console.log(aprovados.length) //Método .length diz o tamanho do array. Esse método começar a contar do "1" e o índice do array começa do "0". Tome cuidado!
 console.log(aprovados[8] === undefined)
 
 console.log(aprovados)
