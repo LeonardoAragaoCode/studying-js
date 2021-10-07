@@ -18,3 +18,13 @@ function removerPropriedade1(objeto, nomeDaPropriedade) {
 }
 
 console.log(removerPropriedade1({a: 1, b: 2, teste: 3}, "b" ))
+
+//2º resolução do professor:
+
+function removerPropriedade2(objeto, nomeDaPropriedade) {
+    const copia = {...objeto} 
+    delete copia[nomeDaPropriedade]
+    return copia
+}
+
+console.log(removerPropriedade2({a: 1, b: 2, teste: 3}, "a"))
