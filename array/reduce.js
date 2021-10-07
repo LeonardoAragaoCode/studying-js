@@ -14,6 +14,8 @@ const resultado = alunos.map(a => a.nota).reduce(function(acumulador, atual){
     return acumulador + atual //No caso eu quero
 })
 
+console.log(`Resultado da acumulação: ${resultado}`)
+
 /* Posso também colocar um número inicial ao invés do "6.5" como inicial.
 * Observe a posição na qual ele deve estar:
 const resultado = alunos.map(a => a.nota).reduce(function(acumulador, atual){

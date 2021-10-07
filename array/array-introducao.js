@@ -28,9 +28,9 @@ console.log(aprovados[2])
 
 // O método .splice pode adicionar, remover ou remover e adicionar ao mesmo tempo.
 aprovados = ['Bia', 'João', 'Ana']
-// aprovados.splice(1, 1)  *REMOVENDO
-// aprovados.splice(1, 0, 'add1', 'add2') *ADICIONANDO
-// aprovados.splice(1, 2, 'alteração1', 'alteração2')  *ALTERANDO
+aprovados.splice(1, 1)  //*REMOVENDO
+//aprovados.splice(1, 0, 'add1', 'add2') //*ADICIONANDO
+//aprovados.splice(1, 2, 'alteração1', 'alteração2')  //*ALTERANDO
 console.log(aprovados)
 
 
