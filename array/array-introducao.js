@@ -27,10 +27,13 @@ console.log(aprovados[1]) //Foi excluído, mas todos os outros índices permanec
 console.log(aprovados[2]) 
 
 // O método .splice pode adicionar, remover ou remover e adicionar ao mesmo tempo.
+//Tomar cuidado, pois esse método é diferente do ".slice"
+
 aprovados = ['Bia', 'João', 'Ana']
-aprovados.splice(1, 1)  //*REMOVENDO
+aprovados.splice(1, 1)  //*REMOVENDO. A partir do índice 1, remova 1.
 //aprovados.splice(1, 0, 'add1', 'add2') //*ADICIONANDO
 //aprovados.splice(1, 2, 'alteração1', 'alteração2')  //*ALTERANDO
+
 console.log(aprovados)
 
 

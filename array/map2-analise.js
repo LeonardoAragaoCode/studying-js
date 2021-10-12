@@ -1,6 +1,6 @@
 Array.prototype.map2 = function(callback) { //Simulação de um ".map"
     const newArray = []
-    for (let i = 0; i < this.length; i++) {
+    for(let i = 0; i < this.length; i++) {
         let result = callback(this[i],i,this)
         console.log(`resultado de ${callback} recebendo (${this[i]}, ${i}, [${this}]) como parâmetro = ${result}`)//Note que como a nossa função callback possui apenas um único parâmetro, ela vai receber apenas o valor de this[i], e os demais parâmetros serão desconsiderados.
         newArray.push(result)

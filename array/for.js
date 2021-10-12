@@ -1,4 +1,4 @@
-// Algumas observações sobre o "for":
+// Algumas observações sobre o "for" quando usar array:
 
 const array = [1, "Pedro", 2,"Maria", 3, "João"]
 
@@ -12,6 +12,8 @@ for(i in array) {
     console.log(`i = ${i}`)
     
 }
+
+//Trabalhando com OBJETOS:
 
 const objeto = {
     nome: "Pedro",

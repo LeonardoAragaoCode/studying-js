@@ -16,9 +16,9 @@ console.log('Método .unshift')
 pilotos.unshift('Hamilton') //Adiciona no primeiro
 console.log(pilotos)
 
-//Método .splice está no "array-introducao"
 
-console.log('Método .slice')    
+
+console.log('Método .slice')  //IMPORTANTE: É DIFERENTE DO MÉTODO ".splice"  
 const algunsPilotos1 = pilotos.slice(2) //Cria um novo Array a partir do índice 2
 console.log(algunsPilotos1)
 
