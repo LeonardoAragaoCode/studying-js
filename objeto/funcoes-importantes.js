@@ -7,7 +7,7 @@ const pessoa = {
 
 console.log(Object.keys(pessoa)) //Mostra somente as chaves 
 console.log(Object.values(pessoa)) //Mostra somente os valores
-console.log(Object.entries(pessoa)) //Mostra as chaves e os valores em array com índices diferentes
+console.log(Object.entries(pessoa)) //Transforma as chaves e valores em array.
 
 // Um exemplo utilizando o método ".entries" e o ".forEach":
 Object.entries(pessoa).forEach(([chave, valor]) => {

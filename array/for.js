@@ -1,4 +1,4 @@
-// Algumas observações sobre o "for" quando usar array:
+// Algumas observações sobre o "for" quando usar ARRAY:
 
 const array = [1, "Pedro", 2,"Maria", 3, "João"]
 

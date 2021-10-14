@@ -13,4 +13,5 @@ console.log(escola.substring(0,3)) // Aparecer 3 caractere, começando do 0
 console.log('Escola '.concat(escola).concat("!")) //".concat" = concatenar, juntar os termos. Pode também ser usado o sinal de "+".
 console.log(escola.replace(3, "e")) //Substitui o 3º caractere pelo "e".
 
-console.log('Ana,Maria,Pedro'.split(',')) //Cria um Array
+console.log('Ana,Maria,Pedro'.split(',')) //Cria um Array e a vírgula serve como um parâmetro para saber onde começar a dividir.
+console.log('Leonardo está estudando Javascript'.split(' ')) //Aqui o critério para a separação em arrays foi o espaço.
