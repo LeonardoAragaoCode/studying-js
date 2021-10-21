@@ -21,6 +21,6 @@ const objeto = {
 }
 
 for(let chave in objeto) { 
-    console.log(`chave = ${chave}`) //Observe que o for está pegando somente as chaves
+    console.log(`chave = ${chave}`) //Observe que o "for" está pegando somente as chaves
     console.log([ chave, objeto[chave] ])
 }

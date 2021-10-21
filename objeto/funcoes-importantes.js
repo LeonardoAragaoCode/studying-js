@@ -5,9 +5,12 @@ const pessoa = {
     peso: 65
 }
 
+const arrayTeste = [['a', 1], ['b', 2]]
+
 console.log(Object.keys(pessoa)) //Mostra somente as chaves 
 console.log(Object.values(pessoa)) //Mostra somente os valores
 console.log(Object.entries(pessoa)) //Transforma as chaves e valores em array.
+console.log(Object.fromEntries(arrayTeste)) //Transforma um par de chave e valor em objeto.
 
 // Um exemplo utilizando o método ".entries" e o ".forEach":
 Object.entries(pessoa).forEach(([chave, valor]) => {
