@@ -17,6 +17,41 @@
     <p class='numero'>5</p>
 
     <script>
-        // ...
+        $('#div1').append(', 2')
+        $('#div1').prepend('0, ')
+
+        $('<span>, 3</span>').appendTo('#div1') //Funciona igual ao append, porém com a ordem invertida. Esse "<span>" é para especificar para o seletor do jQuery.
+        $('<span>-1, </span>').prependTo('#div1')
+
+        $('#div2').before('<p>ANTES 2</p>') 
+        $('#div2').after('<p>DEPOIS 2</p>')
+
+        $('<p>Antes 3</p>').insertBefore('#div3') //Faz a mesma coisa que o ".before", mas com ordem diferente.
+        $('<p>Depois 3</p>').insertAfter('#div3')
+
+        //$('p.numero').wrap('<div>')
+        $('p.numero').wrapAll('<div id="div4">') 
+        /* Diferença do ".wrap" VS ".wrapAll". 
+        O ".wrap" envolve cada elemento com o que foi especificado. 
+        O ".wrapAll" faz o mesmo, porém ele coloca todos os elementos em apenas um lugar especificado. */
+        
+        $('#div4').empty() //Esvazia a div
+        $('#div3, #div4').prev().remove() //".prev" seleciona o anterior. ".remove" exclui.
+
+        //$('<div>Substituto</div>').replaceAll('body > p') //".replaceAll" substitui um elemento por outro, basta indicar onde.
+        //$('body > p').replaceWith('<div>Substituto</div>') //Faz o mesmo do de cima, ordem diferente.
+        $('body > p').replaceWith(function() {
+            return $('<div>').html($(this).html()).append('!!!')
+        })
+        /*Foi utilizada uma callback na função acima. Resumindo ela: criou uma div, pegou somente o conteúdo do "p" e alterou essa div criada com esse conteúdo. Logo depois, acrescentou os sinais (!!!).*/
+
+        
+
+
+
+
+
+
+        
     </script>
 </body>
