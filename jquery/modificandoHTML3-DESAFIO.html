@@ -5,20 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='js/jquery.js'></script>
+    
     <title>Desafio da aula "Modificando HTML 3"</title>
+
+    <style>
+
+        body {
+            background-color: darkslateblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+
+        h1 {
+            color: whitesmoke;
+            text-align: center;
+            text-shadow: 1px 1px 1px whitesmoke;
+        }
+
+        .interface{
+            background-color: whitesmoke;
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            padding: 15px;
+            border-radius: 8px;
+            
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            
+        }
+
+        tr, th, td {
+            border: 5px solid black;
+            padding: 10px;
+        }
+
+        footer {
+            font-size: 0.6em;
+            color: whitesmoke;
+            text-align: center;
+            margin-top: 20px;
+            opacity: 0.9;
+        }
+
+    </style>
 </head>
 <body>
     
-    <table>
-        <tr>
-            <th>Teste</th>
-            <th>Teste</th>
-        </tr>
-        <tr>
-            <th>Teste</th>
-            <th>Teste</th>
-        </tr>
-    </table>
+    <h1> Desafio do módulo: jQuery </h1>
+    <div id="conteudo"></div>
+    <footer> Criado por Leonardo Aragão </footer>
+    
+    <script>
+
+        const pessoas = [
+            {nome: 'Ana', nota: 9.1},
+            {nome: 'Bianca', nota: 8.4},
+            {nome: 'Carlos', nota: 7.6},
+            {nome: 'Julia', nota: 9.7},
+            {nome: 'Leonardo', nota: 10},
+        ]
+
+        let interface = $('<div class="interface">').append('<table>')
+        $('#conteudo').append(interface)
+        const titulos = $('<tr>').append('<th>Nome</th>').append('<th>Nota</th>') //Poderia ter juntado tudo em 1 append, basta colocar a vírgula para separá-los.
+        $('table').append(titulos)
+
+        const adicionarNaTabela = function (propriedade) {
+            let nome = $('<td>').append(propriedade.nome) //O ideal seria o uso do ".html", pois ele trocaria o conteúdo pelo o que for indicado.
+            let nota = $('<td>').append(propriedade.nota)
+            let nomeENota = $('<tr>').append(nome).append(nota) // Poderia ter colocado ".append(nome, nota)".
+            $('table').append(nomeENota)
+        }
+
+        pessoas.forEach(adicionarNaTabela)
+        
+
+        
+    </script>
     
 </body>
 </html>
